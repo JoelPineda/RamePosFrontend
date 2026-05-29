@@ -27,8 +27,8 @@ export function LoginPage({ onLogin, mode = "login" }: LoginPageProps) {
   const loginForm = useForm<LoginFormValues>({
     resolver: zodResolver(loginSchema),
     defaultValues: {
-      email: "admin@ramepos.local",
-      password: "Admin123!"
+      email: "",
+      password: ""
     }
   });
   const recoveryForm = useForm<{ email: string }>({
